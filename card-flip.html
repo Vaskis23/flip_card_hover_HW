@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Flip</title>
+    <style>
+        body {
+            background-color: #ddd;
+        }
+        .card {
+            border: 1px solid #999;
+            border-radius: 5px;
+            margin: 50px 100px;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 5px 2px #918e8e;
+            font-size: Arial;
+            text-align: center;
+            transform: rotateY(0);
+        }
+        .card:hover {
+            box-shadow: 0 0 7px 3px #918e8e;
+            transform: rotateY(180deg);
+        }
+        .card-header {
+            margin-bottom: 30px;
+        }
+        .card-h1 {
+            margin: 0;
+        }
+        .card-h2 {
+            margin: 0;
+        }
+        .card-p {
+            text-align: justify;
+        }
+        .card-img {
+            width: 100%;
+        }
+        .card-a {
+            background-color: #223;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: inline-block ;
+            transform: rotateY(0);
+           
+        }
+        .card-a:hover{
+            transform: rotateY(180deg);
+            transition: 0.5s;
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <article class="card">
+        <header class="card-header">
+            <h1 class="card-h1">Flip Card</h1>
+            <h2 class="card-h2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, qui!</h2>
+        </header>
+        <img class="card-img" src="https://picsum.photos/id/237/536/354" alt="">
+        <p class="card-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, neque nisi, esse architecto, doloremque ad sed eligendi corporis eum nulla quod. Dicta eum laudantium assumenda a enim, omnis reiciendis inventore.</p>
+        <footer class="card-footer">
+            <a class="card-a" href="#">See other examples</a>
+        </footer>
+    </article>
+    
+</body>
+</html>
